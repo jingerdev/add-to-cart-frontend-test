@@ -41,12 +41,15 @@ function App() {
       setError(true)
     }
   }
-  
+  let totalCount = 0
+  cart.map(item => {
+    totalCount += item.count
+  })
   return (
     <div className='container'>
       {/* Cart */}
       <div className='cart'>
-        <button onClick={() => setDisplay(!display)}>My Cart (<span>{cart.length}</span>)</button>
+        <button onClick={() => setDisplay(!display)}>My Cart (<span>{totalCount}</span>)</button>
         <div className={`cart-items ${!display ? 'hidden' : ''}`}>
           {cart.map((item, idx) => {
             return (
