@@ -1,38 +1,147 @@
-.App {
-  text-align: center;
+body {
+  color: #888888;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  max-width: 1440px;
+  margin: 20px auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.cart {
+  height: 30px;
+  background-color: #F6F6F7 ;
+  text-align: right;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.cart button {
+  padding: 8px;
+  font-size: 12px;
+}
+
+.cart button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.cart button:hover {
+  border: 1px solid #888888;
+  background-color: #fff;
+}
+
+.cart-items {
+  background-color: #fff;
+  border: 1px solid #CCCCCC;
+  padding: 20px;
+  position: relative;
+  color: #222222;
+  width: 250px;
+  font-size: 13px;
+  right: 0;
+}
+
+.cart-items .details {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: left;
+  margin-bottom: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.cart-items .details .product-name {
+  font-weight: 600;
+}
+.cart-items .details .product-price {
+  font-weight: 700;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.hidden {
+  display: none;
+}
+
+.item-view {
+  width: 900px;
+  margin: 0 auto;
+  padding: 50px;
+  display: flex;
+}
+
+.item-view .product-image {
+  height: 600px;
+}
+
+
+.item-view .product-price {
+  font-weight: 700;
+  color: #222222;
+}
+
+
+.item-view .product-name {
+  font-size: 23px;
+  font-weight: 500;
+  color: #222222;
+}
+
+
+.item-view .product-description {
+  line-height: 28px;
+}
+
+.size {
+  font-weight: 500;
+}
+
+.size .selected {
+  font-weight: 900;
+  color: #222222;
+  padding-left: 8px;
+}
+
+.options {
+  display: flex;
+}
+
+.options p {
+  padding: 10px;
+  border: 1px solid #CCCCCC;
+  margin-right: 7px;
+  width: 20px;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.options p:hover {
+  border: 1px solid #222222;
+}
+
+.options p.selected {
+  border: 1px solid #222222;
+}
+
+.required {
+  color: #C90000;
+  font-weight: 900;
+}
+
+.add-button {
+  background: none;
+  padding: 8px 25px;
+  font-weight: 700;
+  cursor: pointer;
+  border: 2px solid #222222;
+}
+
+.add-button:hover {
+  background-color: #222222;
+  color: #ffffff;
+}
+
+
+@media screen and (max-width: 880px) {
+  .item-view {
+    display: block;
+    width: 100%;
   }
 }
