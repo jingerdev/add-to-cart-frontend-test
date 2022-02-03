@@ -113,11 +113,12 @@ body {
 }
 
 .options p:hover {
-  border: 1px solid #222222;
+  border: 2px solid #222222;
+  transition-duration: 0.2s;
 }
 
 .options p.selected {
-  border: 1px solid #222222;
+  border: 2px solid #222222;
 }
 
 .required {
@@ -136,6 +137,7 @@ body {
 .add-button:hover {
   background-color: #222222;
   color: #ffffff;
+  transition-duration: 0.2s;
 }
 
 
